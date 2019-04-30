@@ -1,0 +1,1 @@
+This project is about how different algorithms can be used for classification of imbalanced data.
