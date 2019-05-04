@@ -49,3 +49,25 @@ You can also upsample and downsample data which basically means that you copy th
 On to the last question. Some models just don’t work on complex or large data. The classical ML models are not effective enough at scale to compete with Reinforcement Learning, LightBGM, XGBoost, Deep Learning, or the Hybrid model. All of the later models reach 75-88% accuracy and far out performed Trees, Forests, Logistic, Naive Bayes, SVM, Nearest Neighbor, or SGD. This is about the result I expected.
 
 I went into this project expecting to find that the stuff I was taught in school would work just fine and I didn’t need all the extra fluff that everyone on kaggle loves so much. I was wrong. I learned that sometimes you need sophisticated models to solve complex problems and that the real world is not nearly as nice and clean as the classroom. I learned that I was severally underprepared to solve the problems presented in front of me and how to overcome my shortcomings. All in all I learned what it means to be a data scientist. I learned how much time and effort and creativity you need to put into solving every problem. I hope that my time and effort into this project can possibly help some of you or to inspire you to do something hard. Something that you are not comfortable with and to make a difference in the world of machine learning!
+
+
+
+I did not create these models. I did however want to spotlight some amazing models created by kaggle users.
+
+
+Thomas Rohwer https://www.kaggle.com/trohwer64/submission-fourier-neighbour-detection-svm
+
+He used normalized fourier amplitudes as features, found nearby series to be used as averages for the frequencies then used a support vector machine to classify the resulting clusters. Very original idea and highly recommend that you check out the kernal!!!
+
+Abdur Rafae https://www.kaggle.com/abdurrafae/using-group-id-s-the-right-way
+
+Another awesome kernal! He created 2 sets of bootstrapped models. The first layer of models consisted of multiple CNN layers followed by a Bi-LSTM. It then connects to a FC layer, the meta data is then added to the FC layer which is added to another FC layer which then outputs to the final model. The final model is has 2 pairs of inner and out models like the first model followed by some lambda layers that compare the output of the model and predicts if both the samples are from the same surface. He then uses this comparison and the overall output as the prediction, although you could create a prediction model for some extra overkill!!! Awesome work!
+
+Prithvi https://www.kaggle.com/prith189/starter-code-for-3rd-place-solution
+He created the most intense LSTM I have seen. Its hard to even describe everthing going on in this model so I would recommend checking it out if you want to be confused and interested by something. Also it takes a long time to run if you are curious about that!
+
+Pedro Jofre Lora https://www.kaggle.com/pjofrelora/hybrid-classifier-solution-11th-place
+He also used some exploitation of the data as the training and testing was linked. Based off of the obvious link he created a model that used TSFRESH to analyize the data and create new features to be used for standard classification techniques. He then used 6 different models to train on the data and used an ensemble method to create a final output from the output of the link and the 6 models. Great use of resources and a very unique exploit of the data!
+
+Rajanikant Tenguria https://www.kaggle.com/algorrt/highest-scoring-public-kernel-starter-sol-29
+He took the code from https://www.kaggle.com/friedchips/the-missing-link and finalized it. This was the code that found out that there was a link between training and test data and how to exploit it to come up with the correct solution effectively ending the kaggle competition lol. Still it was very clever and impressive that so many people can up with similar solutions instead of making better models!

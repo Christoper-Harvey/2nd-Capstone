@@ -37,3 +37,9 @@ the first bucket is always just x^i. The agent is always allowed to see bucket o
 The reward emitted after each action is Rt = 1 - z/m . which is therefore always between -1 and 1. Although the reward function is class independent, the agent with the same class as the training data will try to maximize its reward. While the other agents will try to minimize theirs. With a max value of 1 or -1 for 100% accurate.
 
 After all the training is complete the agents will learn what is and what isn't there data. Then you do a one vs all update on each piece of new data and the agent which 'claims' the new data will be what the classification is.
+
+You can balance for imbalanced data using this method naturally as each method will know what is and what isn't there own data. So the size and amount of data will not change the result. You can add noise to the data to prevent overfitting or by having the training data be 'forgotten' every state but the features or weights kept.
+
+The paper Deep Reinforcement Learning for Imbalanced Classification has some great ideas on how to better overcome the hurdles of real world data problems. I highly recommend you to give it a read!
+
+Reinforcement learning is actively taking over all areas of machine learning and supervised learning will not be any different. I look forward to working more on creating this process in the future!
