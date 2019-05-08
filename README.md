@@ -8,16 +8,63 @@ How do models compare on both balanced and unbalanced datasets?
 
 I wanted to answer these questions not only to help myself better understand how and why to classify data but also to be able to teach and help others understand it better.
 
+-------
 
+I wanted to quickly discuss some general topics about machine learning that will be helpful to know before reading this README or looking at my notebooks. If you are an experienced machine learner then please feel free to skim this section but I would encourage you to read the CV papers.
 
+If you are new completely here are some great resources to learn everything talked about in this project!
 
+https://youtu.be/9rDhY1P3YLA
 
-CV
+http://neuralnetworksanddeeplearning.com/chap1.html
+
+https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf
+
+https://machinelearningmastery.com/
+
+https://peterroelants.github.io/posts/neural-network-implementation-part01/
+
+https://www.analyticsindiamag.com/6-types-of-artificial-neural-networks-currently-being-used-in-todays-technology/
+
+https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks
+
+https://pcc.cs.byu.edu/2017/10/02/practical-advice-for-building-deep-neural-networks/
+
+https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/
+
+If you are not new I want to go over some things that might be new to you and that will help you greatly in your life. There are several
+
+#### Automization and Transfer Learning
+
+https://medium.com/@mikkokotila/a-comprehensive-list-of-hyperparameter-optimization-tuning-solutions-88e067f19d9
+
+https://www.analyticsvidhya.com/blog/2017/06/transfer-learning-the-art-of-fine-tuning-a-pre-trained-model/
+
+### Deep Learning
+
+https://www.datasciencecentral.com/profiles/blogs/large-collection-of-neural-networks-ml-numpy-pandas-matplotlib-sc
+
+https://towardsdatascience.com/how-to-rapidly-test-dozens-of-deep-learning-models-in-python-cb839b518531
+
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
+https://skymind.ai/wiki/lstm
+
+https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html
+
+### Reinforcement Learning
+
+https://lilianweng.github.io/lil-log/
+
+http://incompleteideas.net/book/the-book.html
+
+### CV
 
 http://ai.stanford.edu/~ang/papers/cv-final.pdf
 
 http://people.csail.mit.edu/romer/papers/CrossVal_SDM08.pdf
 
+-------
 
 To answer these questions I created standard data benchmarks using Iris, UCI Wine Quality, Robot IMU Sensor Data(IMUSD from now on), Credit Card Data(CCD from now on). Iris and Wine are the balanced datasets for our data. IMUSD and CCD are the imbalanced datasets.
 
@@ -37,6 +84,8 @@ I think most real life problems are complex and messy. So much so that we actual
 This brings us to question 2. What ways can we deal with imbalanced data to better improve our results for real life use cases?
 
 SMOTE is a popular technique used to create artificial data that looks like real data. It does this by clustering the data and taking linear paths between points of data and creating a new data point on some random amount of distance on the linear path. This effectively makes the data clusters ‘larger’ and doesn’t take away from the features of each class for the model’s generality of future data.
+
+https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.over_sampling.SMOTE.html
 
 One of the Deep Learning approaches to solving imbalanced data is to have imbalanced weights for neurons in the networks to add extra importance to correctly classifying a minority class. They deal heavy punishments to the error when you incorrectly classify a minority class and do very little to the error when you incorrectly classify a majority class. This creates a sense of ‘fear’ in the model as it never wants to mislabel a minority class again after the first training session. This stops the problem of the model overfitting the majority classes to achieve a higher score because that is easier to do. Instead the model always pays more attention to the data surrounding a minority class to extract its features so it can correctly identify the minority class in the future. This approach is highly effective in cases where the minority class has a sizable amount of data to it. In the case of IMUSD this worked for 3 of the minority classes but not the class with only 27 series entries as it had so little data that it couldn’t accurately tell which class it was. It does work VERY well in the case of binary classification though.
 
