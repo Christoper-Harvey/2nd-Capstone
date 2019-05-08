@@ -84,7 +84,7 @@ So the question is: How do you choose when there are hundreds of machine learnin
 
 There are lists like these
 
-<img src='https://cdn-images-1.medium.com/max/1600/1*9gGtNn2EXW1Zog-bjdGsHQ.png' / >
+<img src='https://cdn-images-1.medium.com/max/1600/1*9gGtNn2EXW1Zog-bjdGsHQ.png' />
 
 But they only get you so far. The knowledge comes from years of studying and applying techniques to real world data and coming to an intuitive sense of what you should use. We don't have this kind of time with how busy our lives are becoming. So what are some 21st century solutions to this 21st century problem?
 
