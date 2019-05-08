@@ -57,7 +57,7 @@ If you want to contact me feel free to message me on linkedin or email me at chr
 
 https://www.linkedin.com/in/christopher-harvey-0a0304167/
 
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------
 
 I did not create these models. I did however want to spotlight some amazing models created by kaggle users.
 
