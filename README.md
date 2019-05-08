@@ -10,7 +10,7 @@ I wanted to answer these questions not only to help myself better understand how
 
 -------
 
-I wanted to quickly discuss some general topics about machine learning that will be helpful to know before reading this README or looking at my notebooks. If you are an experienced machine learner then please feel free to skim this section but I would encourage you to read the CV papers.
+I want to quickly discuss some general topics about machine learning that will be helpful to know before reading this README or looking at my notebooks. If you are an experienced machine learner then please feel free to skim this section but I would encourage you to read the CV papers.
 
 #### If you are new completely here are some great resources to learn everything talked about in this project!
 
