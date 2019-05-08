@@ -1,5 +1,9 @@
 https://www.linkedin.com/in/christopher-harvey-0a0304167/
 
+http://ai.stanford.edu/~ang/papers/cv-final.pdf
+
+http://people.csail.mit.edu/romer/papers/CrossVal_SDM08.pdf
+
 For this Project I want to tackle three problems:
 
 How to choose the best classifier?
