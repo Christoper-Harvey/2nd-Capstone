@@ -135,6 +135,12 @@ https://www.linkedin.com/in/christopher-harvey-0a0304167/
 
 -------
 
+If you are new to machine learning please start in my 'SKLearn' notebook then do 'LightGBM and XGBoost' then 'Deep Learning' Then read my 'Reinforcement Learning for Classification.md' for the best learning order. If you are not new feel free to jump between notebooks as you wish.
+
+If you want to run this code yourself please fork and download this repo onto your computer and create a pip or conda environment for it and install the packages from 'requirements.txt' after that you should be able to run all the code in my notebooks.
+
+------
+
 #### I did not create these models. I did however want to spotlight some amazing models created by kaggle users for the IMUSD.
 
 Thomas Rohwer https://www.kaggle.com/trohwer64/submission-fourier-neighbour-detection-svm
@@ -156,3 +162,7 @@ He also used some exploitation of the data as the training and testing was linke
 Rajanikant Tenguria https://www.kaggle.com/algorrt/highest-scoring-public-kernel-starter-sol-29
 
 He took the code from https://www.kaggle.com/friedchips/the-missing-link and finalized it. This was the code that found out that there was a link between training and test data and how to exploit it to come up with the correct solution effectively ending the kaggle competition lol. Still it was very clever and impressive that so many people can up with similar solutions instead of making better models!
+
+
+
+Thanks for reading :D
