@@ -7,7 +7,7 @@ backcall==0.1.0
 bleach==3.1.0
 bokeh==1.1.0
 brewer2mpl==1.4.1
-certifi==2019.3.9
+certifi==2022.12.7
 chances==0.1.6
 chardet==3.0.4
 colorama==0.4.1
